@@ -1,0 +1,696 @@
+/*-------------------CSS reset ------------------------ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*-------------------CSS reset end ------------------------ */
+
+/*-------------------HEADER START------------------------ */
+
+.headerhero {
+    width: 100vw;
+    height: 500px;
+    background: linear-gradient(
+0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 47%), url(./img/header.png);
+    background-size: cover;
+    background-position: center;
+}
+.headertop {
+    display: flex;
+
+}
+
+.headerlogo {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.navigation {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+
+}
+.navigation li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navlist{
+    display: flex;
+    margin-top: 10px;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.navlist i{
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.headertxt {
+    color: white;
+    width: 45%;
+    display: block;
+    padding-left: 4%;
+    margin: auto;
+    margin-top: -14%;
+    margin-bottom: 5%;
+    margin-left: 22%;
+    font-family: 'charter-bd-bt-bold', serif;
+}
+
+.headertxt h1 {
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+}
+.headertxt h3 {
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.p1 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.headercta {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    
+    }
+
+.maincta {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 25px;
+    padding: 20px;
+    -webkit-box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.89); 
+    box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.89);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.maincta a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.maincta:hover{
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: #56f060e0;
+    
+}
+
+/*------------------- HEADER END------------------------ */
+/*------------------- INFO START------------------------ */
+.infosection {
+    width: 100vw;
+    height: 80vh;
+}
+
+.infobox{
+    display: block;
+    margin: auto;
+    width: 60%;
+    font-family: 'charter-bd-bt-bold', serif;
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+.topbox {
+    display: flex;
+    padding-bottom: 14%;
+}
+.topboxtxt h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.topboxtxt p {
+    padding: 2%;
+}
+
+.topinfoimg {
+    width: 200px;
+    height: auto;
+    padding-right: 10%;
+}
+
+.botbox {
+    display: flex;
+}
+
+.botboxtxt h4 {
+    font-size: 30px;
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botinfoimg {
+    width: 240px;
+    height: 240px;
+    padding-left: 10%;
+}
+
+.botboxtxt p {
+    padding: 2%;
+}
+/*------------------- INFO END------------------------ */
+/*------------------- PRODUKTER START------------------------ */
+.produktersection {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/oraganic.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.produkter-h1 {
+    font-size: 45px;
+    color: white;
+}
+
+.produkter-h2 {
+    font-size: 30px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.produkter-middle{
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+.produkter-row {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 40px;
+}
+
+.produkter-col {
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5%;
+    -webkit-box-shadow: 1px 11px 39px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 11px 39px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 11px 39px -5px rgba(0, 0, 0, 0.75);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.produkter-col h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.produkter-img1,
+.produkter-img2,
+.produkter-img3,
+.produkter-img4 {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5%;
+
+}
+.produkter-img1 {
+    background-image: url(./img/purely1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.produkter-img2 {
+    background-image: url(./img/purely2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.produkter-img3 {
+    background-image: url(./img/hårologi1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.produkter-img4 {
+    background-image: url(./img/hårologi2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.produkter-overlay {
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    background-color: #5dbb6478;;
+    width: 100%;
+    height: 109%;
+    border-radius: 5%;
+}
+
+.produkter-overlay-border {
+    border: 2px solid white;
+    width: 85%;
+    height: 85%;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10%;
+}
+.produkter-img1:hover .produkter-overlay,
+.produkter-img2:hover .produkter-overlay,
+.produkter-img3:hover .produkter-overlay,
+.produkter-img4:hover .produkter-overlay
+ {
+    opacity: 1;
+
+}
+
+
+.produkter-middle::before {
+    content: "";
+    border-top: 100px solid white;
+    border-right: 100vw solid transparent;
+    top: -100px;
+    left: 0;
+}
+.produkter-middle::after {
+    content: "";
+    border-bottom: 100px solid rgb(240, 240, 240);
+    border-left: 100vw solid transparent;
+    bottom: -100px;
+    left: 0;
+}
+
+/*------------------- Priser START------------------------ */
+.prisersection {
+    width: 100vw;
+    height: 60vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.prisersection h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+.priser-row {
+    display: flex;
+    gap: 2%;
+    margin-bottom: 300px;
+    justify-content: center;
+}
+
+.priser-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.76); 
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.76);
+    transition: all 0.4s ease-in-out;
+    color: white;
+}
+
+#male {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/male.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#female {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/female.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#child {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/child.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#perm {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/perm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#styling {
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 47%), url(./img/styling.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.priser-col:hover{
+    width: 350px;
+    height: 350px;
+    cursor: pointer;
+}
+.priser-title {
+    display: flex;
+    gap: 5%;
+    font-size: 23px;
+    padding-top: 30px;
+    
+}
+
+.priser-title i {
+    color: #3ab342e0;
+    font-size: 30px;
+}
+.priser-col h2 {
+    font-size: 30px;
+}
+
+.priser-btn {
+    background-color: #56f060e0;
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.priser-btn a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+.priser-btn:hover {
+    background-color:#8cff94e0;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+/*------------------- Testimonial START------------------------ */
+.testimonial {
+    width: 100vw;
+    height: 68vh;
+    margin-top: 100px;
+}
+
+.testimonialsection h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.testimonial-row {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.testimonial-row i{
+    color: #8cff94;
+}
+
+.fa-quote-left {
+    float: right;
+}
+.testimonial-col {
+    width: 300px;
+    height: 300px;
+    -webkit-box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.76); 
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.76);
+    transition: all 0.4s ease-in-out;
+    padding: 1%;
+}
+.testimonial-col h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.testimonialpic{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: -70px;
+
+}
+
+#toni {
+    background-image:url(./img/toni.jpg);
+
+}
+#karin {
+    background-image:url(./img/karin.jpg);
+
+}
+#camilla {
+    background-image:url(./img/camilla.jpg);
+    background-position-y: 1px;
+
+}
+.testimonial-middle {
+    position: relative;
+}
+.testimonial-middle::after {
+    content: "";
+    border-bottom: 100px solid rgb(240, 240, 240);
+    border-right: 100vw solid transparent;
+    bottom: -100px;
+    left: 0;
+}
+.testimonial-middle::before {
+    content: "";
+    border-top: 100px solid rgb(240, 240, 240);
+    border-left: 100vw solid transparent;
+    top: -100px;
+    left: 0;
+}
+/*------------------- FOOTER START------------------------ */
+.footer-row {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 5%;
+    background-color: rgb(240, 240, 240);
+}
+.footerlogo {
+    width: 180px;
+    margin-top: -3%;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.frisorstationen {
+    font-weight: bold;
+}
+
+.footer-row i {
+    font-size: 35px;
+    color:#63d16aa9 ;
+}
+
+.footer-row i a {
+    text-decoration: none;
+}
+
+/*------------------- BOOKING START------------------------ */
+.booking-section {
+    width: 100vw;
+    height: 60vh;
+    background-color: aqua;
+}
+.navigation2 {
+    float: right;
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+
+}
+.navigation2 li a {
+    text-decoration: none;
+    color: black;
+}
+.navlist2{
+    display: flex;
+}
+
+.navlist2 li {
+    list-style: none;
+    padding: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.headertop2 {
+    display: flex;
+    background-color: white;
+}
+/*------------------- WEBSHOP START------------------------ */
+#shop {
+    background-color:rgb(240, 240, 240) ;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#webshop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 5%;
+}
+.productImg {
+    width: 300px;
+    border-radius: 5%;
+    -webkit-box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.89); 
+    box-shadow: 1px 3px 15px 5px rgba(0,0,0,0.89);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    margin-bottom: 3%;
+}
+
+.product-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin: 1%;
+}
+
+.productName {
+    font-size: 25px;
+}
+
+.productImg:hover {
+    margin-top: -10px;
+}
+
+#shop h1 {
+    font-size: 30px;
+    margin-top: 2%;
+}
+#shop hr{
+    width: 300px;
+}
+#shop h2 {
+    font-size: 22px;
+}
+/*------------------- Prices START------------------------ */
+#priser{
+    width: 100vw;
+}
+
+#priser h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: -4%;
+}
+.pricetables {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3%;
+    margin-left: 15%;
+    padding-top: 4%;
+}
+.pricetables-area {
+    background-color: rgb(240, 240, 240);
+}
+table {
+    padding: 5%;    
+}
+thead {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+tr{
+    font-family: 'Roboto', sans-serif;
+}
+
+th {
+    border-bottom: solid black 2px;
+    padding-bottom: 2%;
+}
+td {
+    font-size: 18px;
+    padding: 2%;
+    border-bottom: solid black 1px;
+}
+/*------------------- 404------------------------ */
+#fourohfour {
+    width: 100vw;
+    text-align: center;
+}
+#fourohfour h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25%;
+    margin-bottom: 3%;
+}
+#fourohfour a {
+    text-decoration: none;
+    color: black;
+    padding: 18px;
+    background-color: chartreuse;
+    border-radius: 2%;
+    font-size: 25px;
+    -webkit-box-shadow: 1px 3px 15px 5px rgba(0, 0, 0, 0.678); 
+    box-shadow: 1px 3px 15px 5px rgba(0, 0, 0, 0.568);
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+#fourohfour a:hover {
+    padding: 20px;
+}
